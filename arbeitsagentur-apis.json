@@ -77,6 +77,13 @@
     "documentation":"https://www.arbeitsagentur.de/jobsuche/"
   },
   {
+    "title":"New Plan",
+    "description":"Das Online-Tool New Plan unterstützt Personen im Erwerbsleben bei der beruflichen Orientierung.",
+    "url":"https://web.arbeitsagentur.de/sete/inspirieren/inspirieren/",
+    "category":"New Plan",
+    "documentation":"https://github.com/bundesAPI/sofortmassnahmen/issues/65"
+  },
+  {
     "title":"Entgeltatlas",
     "description":"Was verdienen Menschen in welchem Beruf - Entgeltinformationen aus der Beschäftigungsstatistik der Bundesagentur für Arbeit.",
     "url":"https://web.arbeitsagentur.de/entgeltatlas/",
