@@ -95,7 +95,7 @@
     "description":"Starten Sie hier Ihre Suche nach passenden Mitarbeiterinnen und Mitarbeitern für Ihr Unternehmen.",
     "url":"https://www.arbeitsagentur.de/bewerberboerse/",
     "category":"Bewerberbörse",
-    "documentation":"-"
+    "documentation":"https://github.com/bundesAPI/bewerberboerse-api"
   }
   
   
