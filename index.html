@@ -85,20 +85,9 @@ function appendJSON(json,myContainer,level) {
 }
 
 const data ='[{"title":"Schulische Ausbildungen", "description":"Verschaffen Sie sich einen Überblick über schulische Ausbildungen und Zugangsvoraussetzungen in Ihrer Region.","url":"https://web.arbeitsagentur.de/ausbildungssuche/berufsausbildung-suche?sty=0&seite=0&atyp=102","category":"Ausbildungssuche","documentation":"https://github.com/bundesAPI/ausbildungssuche-api"},{"title":"Umschulungen","description":"Sie haben keinen Berufsabschluss oder wollen neue Wege gehen: Finden Sie passende Angebote zum Erwerb eines Berufsabschlusses deutschlandweit und in Ihrer Region.","url":"https://web.arbeitsagentur.de/ausbildungssuche/berufsausbildung-suche?sty=0&seite=0&atyp=109","category":"Ausbildungssuche","documentation":"https://github.com/bundesAPI/ausbildungssuche-api"},{"title":"Teilqualifikationen","description":"Mit Teilqualifizierungen können Sie schrittweise einen Berufsabschluss erwerben: Finden Sie das passende Angebot.","url":"https://web.arbeitsagentur.de/ausbildungssuche/berufsausbildung-suche?sty=0&seite=0&atyp=101","category":"Ausbildungssuche","documentation":"https://github.com/bundesAPI/ausbildungssuche-api"},{"title":"Schulabschluss nachholen","description":"Vom Hauptschulabschluss bis hin zum Abitur – finden Sie das richtige Angebot für Ihr Vorhaben.","url":"https://web.arbeitsagentur.de/ausbildungssuche/schulabschluss-suche","category":"Ausbildungssuche","documentation":"https://github.com/bundesAPI/ausbildungssuche-api"},{"title":"Vorbereitende Angebote","description":"Vor dem Einstieg in die Ausbildung oder die Berufswelt: Finden Sie passende Angebote für Theorie und Praxis.","url":"https://web.arbeitsagentur.de/ausbildungssuche/vorbereitende-hilfen-suche?sty=2&seite=0","category":"Ausbildungssuche","documentation":"https://github.com/bundesAPI/ausbildungssuche-api"},{"title":"Begleitende Hilfen","description":"Schlechte Noten in der Berufsschule oder Probleme im Betrieb: Lernen Sie Unterstützungsangebote kennen.","url":"https://web.arbeitsagentur.de/ausbildungssuche/begleitende-hilfen-suche?sty=3&seite=0","category":"Ausbildungssuche","documentation":"https://github.com/bundesAPI/ausbildungssuche-api"},{"title":"Weiterbildungsangebote","description":"Erweitern Sie berufliche Kenntnisse: Mit der Weiterbildungssuche finden Sie für sich oder als Betrieb für Ihre Beschäftigten passende Bildungsangebote.","url":"https://web.arbeitsagentur.de/weiterbildungssuche/","category":"Weiterbildungssuche","documentation":"https://github.com/bundesAPI/weiterbildungssuche-api"},{"title":"Sprachförderung und Migration","description":"Finden Sie (Berufs-)Sprachkurse, Möglichkeiten zur Anerkennung ausländischer Berufsabschlüsse sowie weitere Angebote.","url":"https://web.arbeitsagentur.de/sprachfoerderung/home","category":"Berufssprachkurssuche","documentation":"https://github.com/bundesAPI/berufssprachkurssuche-api"},{"title":"AVGS-Angebote","description":"Aktivierungs- und Vermittlungsgutschein (AVGS) nutzen: Suchen Sie nach passenden Maßnahmen.","url":"https://web.arbeitsagentur.de/coachingundaktivierung/home","category":"Coachingangebote","documentation":"https://github.com/bundesAPI/coachingangebote-api"},{"title":"Studienangebote","description":"Die Auswahl an Studienorten und Studienfächern ist vielfältig. Die Studiensuche unterstützt bei der optimalen Auswahl.","url":"https://web.arbeitsagentur.de/studiensuche/suche?uk=Bundesweit&sty=0","category":"Studiensuche","documentation":"https://github.com/bundesAPI/studiensuche-api"},{"title":"Jobsuche","description":"Hier Stellensuche nach neusten Jobs oder Ausbildungsplätzen starten in einer der größten Jobbörsen Deutschlands.","url":"https://web.arbeitsagentur.de/entgeltatlas/","category":"Jobsuche","documentation":"https://www.arbeitsagentur.de/jobsuche/"},{"title":"Entgeltatlas","description":"Was verdienen Menschen in welchem Beruf - Entgeltinformationen aus der Beschäftigungsstatistik der Bundesagentur für Arbeit.","url":"https://web.arbeitsagentur.de/entgeltatlas/","category":"Entgeltatlas","documentation":"https://github.com/bundesAPI/entgeltatlas-api"}]'
+//appendJSON(data,myContainer,0);
 
-appendJSON(data,myContainer,0);
-			document.querySelectorAll('.filter').forEach(function(input) {
-    				var table = document.querySelector(input.dataset.for);
-   			 	var rows = table.querySelectorAll('tbody tr');
-    				input.addEventListener('input', function(event) {
-        				rows.forEach(function(tr) {
-           					tr.hidden = !tr.textContent.includes(input.value);
-        				});
-    				});
-			});           
-
-/*
-fetch('https://raw.githubusercontent.com/AndreasFischer1985/arbeitsagentur-apis/main/kursnet-apis.json')
+fetch('https://raw.githubusercontent.com/AndreasFischer1985/arbeitsagentur-apis/main/arbeitsagentur-apis.json')
 		 .then(function (response) { return response.json();})
 		 .then(function (data) { 
 			appendJSON(JSON.stringify(data),myContainer,0);
@@ -113,7 +102,19 @@ fetch('https://raw.githubusercontent.com/AndreasFischer1985/arbeitsagentur-apis/
 			});           
 		})
 		 .catch(function (err){});
-*/
+
+	
+document.querySelectorAll('.filter').forEach(function(input) {
+			var table = document.querySelector(input.dataset.for);
+		 	var rows = table.querySelectorAll('tbody tr');
+			input.addEventListener('input', function(event) {
+      				rows.forEach(function(tr) {
+       					tr.hidden = !tr.textContent.includes(input.value);
+      				});
+			});
+});           
+
+
 </script>
 <style>
 table, th, td {
