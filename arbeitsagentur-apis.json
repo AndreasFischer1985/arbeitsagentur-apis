@@ -89,7 +89,16 @@
     "url":"https://web.arbeitsagentur.de/entgeltatlas/",
     "category":"Entgeltatlas",
     "documentation":"https://github.com/bundesAPI/entgeltatlas-api"
+  },
+  {
+    "title":"Bewerberbörse",
+    "description":"Starten Sie hier Ihre Suche nach passenden Mitarbeiterinnen und Mitarbeitern für Ihr Unternehmen.",
+    "url":"https://www.arbeitsagentur.de/bewerberboerse/",
+    "category":"Bewerberbörse",
+    "documentation":"-"
   }
+  
+  
 ]
 
 
