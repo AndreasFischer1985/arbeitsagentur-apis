@@ -1,6 +1,6 @@
 <html>
 <body>
-<h1>API Kollektion web.arbeitsagentur.de</h1>
+<h1>API-Kollektion<br>web.arbeitsagentur.de</h1>
 <label>Suchbegriff : </label>
 <input type="search" class="filter" data-for="#api-table" autofocus="autofocus">
 <br><br>
@@ -30,13 +30,11 @@ function appendJSON(json,myContainer,level) {
 			var summary = document.createElement("summary");
 			summary.innerHTML="<strong>"+
 				(obj[[i]][["category"]])+"<strong>";
-			details.style.width="800";
 			details.appendChild(summary);
 			var tr = document.createElement("tr");		
 			var td = document.createElement("td");
                         var ob = obj[[i]][["title"]];
                         if(ob == null) ob="n.a.";
-			td.style.width="33%";
 			td.innerHTML="<strong>"+
 				ob +":</strong><br> "+obj[[i]][["description"]];
 			tr.appendChild(td);
@@ -60,7 +58,6 @@ function appendJSON(json,myContainer,level) {
 			var td = document.createElement("td");
 			var ob = obj[[i]][["title"]];
                         if(ob == null) ob="n.a.";
-			td.style.width="33%";
 			td.innerHTML="<strong>"+
 				ob+":</strong><br> "+obj[[i]][["description"]];
 			tr.appendChild(td);
@@ -121,7 +118,19 @@ table, th, td {
   border: 1px solid;
   padding: 5px;
   text-align: left;
-  min-width: 35px
+}
+table, th,td {
+  border: 1px solid;
+  padding: 5px;
+  text-align: left;
+
+}
+details {
+  width:800;
+}
+td {
+  max-width:250;
+  min-width:250;
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
 tr:hover {background-color: coral;}
