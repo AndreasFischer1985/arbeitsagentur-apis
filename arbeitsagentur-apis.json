@@ -110,7 +110,15 @@
     "category":"Bewerberbörse",
     "documentation":"https://github.com/bundesAPI/bewerberboerse-api",
     "kursnet":false
-  }    
+  },
+  {
+    "title":"BERUFENET",
+    "description":"Die Bundesagentur für Arbeit verfügt mit BERUFENET über das umfangreichste Lexikon der Berufe in Deutschland.",
+    "url":"https://web.arbeitsagentur.de/berufenet/ergebnisseite/berufe-a-z?buchstabe=a&page=0",
+    "category":"BERUFENET",
+    "documentation":"https://github.com/bundesAPI/berufenet-api",
+    "kursnet":true
+  }
 ]
 
 
