@@ -74,7 +74,7 @@
   {
     "title":"Studienangebote",
     "description":"Die Auswahl an Studienorten und Studienfächern ist vielfältig. Die Studiensuche unterstützt bei der optimalen Auswahl.",
-    "url":"https://web.arbeitsagentur.de/studiensuche/suche?uk=Bundesweit&sty=0",
+    "url":"https://web.arbeitsagentur.de/studiensuche/suche",
     "category":"Studiensuche",
     "documentation":"https://github.com/bundesAPI/studiensuche-api",
     "kursnet":false
@@ -82,9 +82,9 @@
   {
     "title":"Jobsuche",
     "description":"Hier Stellensuche nach neusten Jobs oder Ausbildungsplätzen starten in einer der größten Jobbörsen Deutschlands.",
-    "url":"https://web.arbeitsagentur.de/entgeltatlas/",
+    "url":"https://www.arbeitsagentur.de/jobsuche/",
     "category":"Jobsuche",
-    "documentation":"https://www.arbeitsagentur.de/jobsuche/",
+    "documentation":"https://github.com/bundesAPI/jobsuche-api",
     "kursnet":false
   },
   {
